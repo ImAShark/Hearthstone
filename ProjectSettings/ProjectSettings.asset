@@ -4,7 +4,11 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
+<<<<<<< HEAD
   productGUID: a09d82f21ec905949b4504c485facea1
+=======
+  productGUID: 5a1701a757bb6764abb7922d83293c17
+>>>>>>> f8e431a139da288abbc40d4a59f75d3bf41a2afb
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +17,11 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
+<<<<<<< HEAD
   productName: Vertical Slice
+=======
+  productName: Hearthstone
+>>>>>>> f8e431a139da288abbc40d4a59f75d3bf41a2afb
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -650,9 +658,15 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
+<<<<<<< HEAD
   cloudProjectId: 6c7043e9-4f7e-4f96-a1e0-2acc5b8d9781
   projectName: Vertical Slice
   organizationId: pieterww
+=======
+  cloudProjectId: 
+  projectName: 
+  organizationId: 
+>>>>>>> f8e431a139da288abbc40d4a59f75d3bf41a2afb
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

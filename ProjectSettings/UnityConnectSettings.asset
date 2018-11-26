@@ -11,13 +11,21 @@ UnityConnectSettings:
   CrashReportingSettings:
     m_EventUrl: https://perf-events.cloud.unity3d.com/api/events/crashes
     m_NativeEventUrl: https://perf-events.cloud.unity3d.com/symbolicate
+<<<<<<< HEAD
     m_Enabled: 1
+=======
+    m_Enabled: 0
+>>>>>>> f8e431a139da288abbc40d4a59f75d3bf41a2afb
     m_CaptureEditorExceptions: 1
   UnityPurchasingSettings:
     m_Enabled: 0
     m_TestMode: 0
   UnityAnalyticsSettings:
+<<<<<<< HEAD
     m_Enabled: 1
+=======
+    m_Enabled: 0
+>>>>>>> f8e431a139da288abbc40d4a59f75d3bf41a2afb
     m_InitializeOnStartup: 1
     m_TestMode: 0
     m_TestEventUrl: 
