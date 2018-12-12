@@ -4,18 +4,22 @@ using UnityEngine;
 
 public class DeckPlayer : MonoBehaviour
 {
+    public int drawAmount = 3;
+    public float curvePos = 0;
+    public float lowering = 0;
+    private int cardsInHand = 0;
+
+    public Vector3 spawn = new Vector3(0, 0, 0);
+
+
 
     public List<GameObject> playerDeck = new List<GameObject>();
     public List<GameObject> playerHand = new List<GameObject>();
 
-    public Vector3 spawn = new Vector3(0, 0, 0);
-
-    private int cardsInHand = 0;
-
     // Use this for initialization
     void Start()
     {
-        DrawCard(3);
+        DrawCard(drawAmount);
     }
 
     // Update is called once per frame
@@ -48,13 +52,30 @@ public class DeckPlayer : MonoBehaviour
                 {
                     playerHand[cardsInHand] = playerDeck[random];
 
-                    Instantiate(playerDeck[random], spawn, Quaternion.identity);
+                    GameObject obj = Instantiate(playerDeck[random], spawn, Quaternion.Euler(90, 0, 0));
+                    playerHand[i] = obj;
+
                     playerDeck.RemoveAt(random);
                     cardsInHand++;
-
                 }
             }
         }
+        OrderCards();
+    }
+
+    private void OrderCards()
+    {
+        for (int i = 0; i < cardsInHand; i++)
+        {
+            Vector3 pos = new Vector3(
+            i - 1,
+            0,
+            Mathf.Sin(((i * Mathf.PI) - curvePos) / (playerHand.Count - 1)) * 2f
+            );
+            playerHand[i].transform.position = pos;
+            Vector3 pos2 = new Vector3(playerHand[i].transform.position.x - 1,
+            playerHand[i].transform.position.y, playerHand[i].transform.position.z - lowering);
+            playerHand[i].transform.position = pos2;
+        }
     }
 }
-

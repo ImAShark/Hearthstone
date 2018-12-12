@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4175455860585422}
   - component: {fileID: 212353857337551218}
-  - component: {fileID: 114104872000639696}
   - component: {fileID: 114260496149557624}
   m_Layer: 0
   m_Name: murloc raider
@@ -42,17 +41,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114104872000639696
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1430839130848038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86fd361dd2527a2438a30c7489351220, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114260496149557624
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -61,10 +49,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1430839130848038}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf20c488c09c2de4cb5ac45ecf2340a9, type: 3}
+  m_Script: {fileID: 11500000, guid: e522425b933eece4da3671f9c6775803, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Deck: {fileID: 1479585391771110, guid: c48ea24d6569f2e4ebd6bb33e24d70bf, type: 2}
+  turnAmount: 15
 --- !u!212 &212353857337551218
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -99,7 +87,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 5b7facd8dc37f1147a0959dfb1031aaf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
