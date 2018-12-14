@@ -38,8 +38,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df3dfb779c1dd4d478481a82328ca979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drawAmount: 3
-  curvePos: 45
+  drawAmount: 2
+  curvePos: 36
   lowering: 5.4
   spawn: {x: 0, y: 11.7, z: -3.5}
   playerDeck:

@@ -6,12 +6,14 @@ public class DeckPlayer : MonoBehaviour
 {
     public int drawAmount = 3;
     public float curvePos = 0;
+    public float curveHeigth = 0;
     public float lowering = 0;
+    public float strength = 0;
     private int cardsInHand = 0;
 
     public Vector3 spawn = new Vector3(0, 0, 0);
 
-
+    private Quaternion rot;
 
     public List<GameObject> playerDeck = new List<GameObject>();
     public List<GameObject> playerHand = new List<GameObject>();
@@ -25,7 +27,7 @@ public class DeckPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        //OrderCards();
     }
 
     private void DrawCard(int amount)
@@ -65,17 +67,33 @@ public class DeckPlayer : MonoBehaviour
 
     private void OrderCards()
     {
+        curvePos = curvePos - (4 * cardsInHand);
         for (int i = 0; i < cardsInHand; i++)
         {
             Vector3 pos = new Vector3(
-            i - 1,
+            i,
             0,
-            Mathf.Sin(((i * Mathf.PI) - curvePos) / (playerHand.Count - 1)) * 2f
-            );
+            //Mathf.Sin(((i * Mathf.PI) - curvePos -4) / (playerHand.Count - 1)) * curveHeigth
+            0);
             playerHand[i].transform.position = pos;
-            Vector3 pos2 = new Vector3(playerHand[i].transform.position.x - 1,
-            playerHand[i].transform.position.y, playerHand[i].transform.position.z - lowering);
+
+            Vector3 pos2 = new Vector3(playerHand[i].transform.position.x - (cardsInHand/2.4f),
+            playerHand[i].transform.position.y,
+            playerHand[i].transform.position.z - lowering);
+
             playerHand[i].transform.position = pos2;
+
+          /*  for (int j = -(cardsInHand / 2); j < cardsInHand / 2; j++)
+            {
+                //int temp = j * 2;
+                Quaternion.Euler(playerHand[i].transform.rotation.x, 
+                playerHand[i].transform.rotation.y, 
+                playerHand[i].transform.rotation.z * (j * strength));
+
+            }*/
         }
+
+
+        
     }
 }

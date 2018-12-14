@@ -14,13 +14,13 @@ public class CardsTurn : MonoBehaviour {
 
     public void Turn()
     {
-        if (transform.position.x < 0)
+        if (transform.position.x < 1)
         {
             transform.eulerAngles = new Vector3(90,
             transform.rotation.y + 0,
             transform.rotation.z + turnAmount);
         }
-        else if (transform.position.x > 0)
+        else if (transform.position.x > -1)
         {
             transform.eulerAngles = new Vector3(90,
             transform.rotation.y + 0,

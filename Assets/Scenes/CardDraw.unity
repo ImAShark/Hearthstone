@@ -433,7 +433,27 @@ Prefab:
     - target: {fileID: 114673151096817478, guid: c48ea24d6569f2e4ebd6bb33e24d70bf,
         type: 2}
       propertyPath: drawAmount
-      value: 5
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114673151096817478, guid: c48ea24d6569f2e4ebd6bb33e24d70bf,
+        type: 2}
+      propertyPath: lowering
+      value: 3.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 114673151096817478, guid: c48ea24d6569f2e4ebd6bb33e24d70bf,
+        type: 2}
+      propertyPath: curveHeigth
+      value: 1.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 114673151096817478, guid: c48ea24d6569f2e4ebd6bb33e24d70bf,
+        type: 2}
+      propertyPath: strength
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114673151096817478, guid: c48ea24d6569f2e4ebd6bb33e24d70bf,
+        type: 2}
+      propertyPath: spawn.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c48ea24d6569f2e4ebd6bb33e24d70bf, type: 2}
