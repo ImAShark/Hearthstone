@@ -38,10 +38,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df3dfb779c1dd4d478481a82328ca979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drawAmount: 2
+  drawAmount: 3
   curvePos: 36
-  lowering: 5.4
-  spawn: {x: 0, y: 11.7, z: -3.5}
+  curveHeigth: 1.07
+  lowering: 3.78
+  strength: 0
+  spawn: {x: 0, y: 11.7, z: 0}
   playerDeck:
   - {fileID: 1430839130848038, guid: 4d39c72690ab11b4897f6d757b8cb464, type: 2}
   - {fileID: 1430839130848038, guid: 4d39c72690ab11b4897f6d757b8cb464, type: 2}
