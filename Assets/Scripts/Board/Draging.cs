@@ -7,7 +7,7 @@ public class Draging : MonoBehaviour
     private Vector3 screenPoint;
     private Vector3 offset;
     public Camera cam;
-    private bool isDragging;
+    private bool isDragging = false;
     private CollisionDetectionCard colDetec;
     
     
@@ -15,7 +15,6 @@ public class Draging : MonoBehaviour
     void Start()
     {
         colDetec = GetComponent<CollisionDetectionCard>();
-        isDragging = false;
         
     }
 

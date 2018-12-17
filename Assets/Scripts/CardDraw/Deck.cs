@@ -51,12 +51,8 @@ public class Deck : MonoBehaviour
                 }
                 else
                 {
-                    //playerHand[cardsInHand] = playerDeck[random];
-
                     GameObject obj = Instantiate(playerDeck[random], spawn, Quaternion.Euler(90, 0, 0));
-                    //Debug.Log(obj.name);
                     playerHand[cardsInHand] = obj;
-                    Debug.Log(playerHand[i]);
                     playerDeck.RemoveAt(random);
                     cardsInHand++;
                 }
