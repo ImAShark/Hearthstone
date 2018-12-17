@@ -6,7 +6,7 @@ public class Draging : MonoBehaviour
 {
     private Vector3 screenPoint;
     private Vector3 offset;
-    public Camera cam;
+    private Camera cam;
     private bool isDragging;
     private CollisionDetectionCard colDetec;
     
@@ -14,6 +14,7 @@ public class Draging : MonoBehaviour
 
     void Start()
     {
+        cam = GameObject.Find("Main Camera").GetComponent<Camera>();
         colDetec = GetComponent<CollisionDetectionCard>();
         isDragging = false;
         
@@ -60,11 +61,16 @@ public class Draging : MonoBehaviour
     }
     public void Snap()
     {
-        //SHould have gone for the head!!
+        //Should have gone for the head!!
         if (colDetec.onBoard) {
             
             transform.position = colDetec.playPos;
+
+
+            gameObject.AddComponent<SpawnArrow>();
             Destroy(this);
+            
+
         }
         else
         {
