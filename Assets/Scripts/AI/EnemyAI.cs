@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour {
 
+    public GameObject EndTurnButton;
+
     [HideInInspector]
     public bool myTurn = false;
 
@@ -17,6 +19,13 @@ public class EnemyAI : MonoBehaviour {
         if (myTurn)
         {
             Debug.Log("Ben er klaar voor!");
+            EndTurn();
         }
 	}
+
+    private void EndTurn()
+    {
+        myTurn = false;
+        EndTurnButton.SendMessage("EndEnemyTurn");
+    }
 }

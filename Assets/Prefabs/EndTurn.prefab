@@ -42,6 +42,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
+  PlayerDeck: {fileID: 0}
+  EnemyDeck: {fileID: 0}
   Button1: {fileID: 21300000, guid: 2ccaa65f137467a4fadeef7a26aa374e, type: 3}
   Button2: {fileID: 21300000, guid: 1bc6005ccf70f254683ebee3e89f95d9, type: 3}
   EndButton: {fileID: 114801808120966174}

@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class DeckPlayer : MonoBehaviour
+public class Deck : MonoBehaviour
 {
     public int drawAmount = 3;
     public float curvePos = 0;
@@ -52,11 +51,12 @@ public class DeckPlayer : MonoBehaviour
                 }
                 else
                 {
-                    playerHand[cardsInHand] = playerDeck[random];
+                    //playerHand[cardsInHand] = playerDeck[random];
 
                     GameObject obj = Instantiate(playerDeck[random], spawn, Quaternion.Euler(90, 0, 0));
-                    playerHand[i] = obj;
-
+                    //Debug.Log(obj.name);
+                    playerHand[cardsInHand] = obj;
+                    Debug.Log(playerHand[i]);
                     playerDeck.RemoveAt(random);
                     cardsInHand++;
                 }
@@ -67,14 +67,14 @@ public class DeckPlayer : MonoBehaviour
 
     private void OrderCards()
     {
-        curvePos = curvePos - (4 * cardsInHand);
+        //curvePos = curvePos - (4 * cardsInHand);
         for (int i = 0; i < cardsInHand; i++)
         {
             Vector3 pos = new Vector3(
-            i,
-            0,
-            //Mathf.Sin(((i * Mathf.PI) - curvePos -4) / (playerHand.Count - 1)) * curveHeigth
-            0);
+                i,
+                0,
+                //Mathf.Sin(((i * Mathf.PI) - curvePos -4) / (playerHand.Count - 1)) * curveHeigth
+                0);
             playerHand[i].transform.position = pos;
 
             Vector3 pos2 = new Vector3(playerHand[i].transform.position.x - (cardsInHand/2.4f),
