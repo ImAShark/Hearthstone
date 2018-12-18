@@ -7,10 +7,11 @@ public class Script : MonoBehaviour{
 
     public CardTextBox kaart;
 
-    public Text nameText;
+    //public Text nameText;
     public Text descriptionText;
 
-    //public Image charFoto;
+    public GameObject IconKunst;
+    public GameObject IconName;
 
     public Text manaText;
     public Text attackText;
@@ -19,10 +20,11 @@ public class Script : MonoBehaviour{
 	// Use this for initialization
 	void Start () {
 
-        nameText.text = kaart.nameBox;
+        //nameText.text = kaart.nameBox;
         descriptionText.text = kaart.description;
 
-        //charFoto.sprite = kaart.charArt;
+        IconKunst.GetComponent<SpriteRenderer>().sprite = kaart.IconArt;
+        IconName.GetComponent<SpriteRenderer>().sprite = kaart.IconName;
 
         manaText.text = kaart.manaCost.ToString();
         attackText.text = kaart.attackDamage.ToString();
@@ -33,7 +35,7 @@ public class Script : MonoBehaviour{
 
     void ParseData(CardTextBox card)
     {
-        nameText.text = kaart.nameBox;
+        //nameText.text = kaart.nameBox;
         descriptionText.text = kaart.description;
 
         //charFoto.sprite = kaart.charArt;

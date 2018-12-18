@@ -9,10 +9,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc0174b24f2368c43b4603b037db8c95, type: 3}
-  m_Name: SilverHandRecruit
+  m_Name: Sheep
   m_EditorClassIdentifier: 
-  nameBox: Silver Hand Recruit
+  nameBox: Sheep
   description: 
-  manaCost: 2
+  IconArt: {fileID: 0}
+  IconName: {fileID: 0}
+  manaCost: 1
   attackDamage: 1
   healthPoints: 1

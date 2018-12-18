@@ -9,10 +9,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc0174b24f2368c43b4603b037db8c95, type: 3}
-  m_Name: Sheep
+  m_Name: Boar
   m_EditorClassIdentifier: 
-  nameBox: Sheep
-  description: 
+  nameBox: Stonetusk Boar
+  description: Charge
+  IconArt: {fileID: 21300000, guid: b984de95a88c28c40aaacf044910ca37, type: 3}
+  IconName: {fileID: 21300000, guid: 64bd8f4de1ce78c47ad61a6addcf79cf, type: 3}
   manaCost: 1
   attackDamage: 1
   healthPoints: 1

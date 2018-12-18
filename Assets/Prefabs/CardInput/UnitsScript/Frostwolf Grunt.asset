@@ -13,6 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameBox: Frostwolf Grunt
   description: Taunt
+  IconArt: {fileID: 0}
+  IconName: {fileID: 21300000, guid: 3d280f8bdb6cdce44a12468deaa4921e, type: 3}
   manaCost: 2
   attackDamage: 2
   healthPoints: 2

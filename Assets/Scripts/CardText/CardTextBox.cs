@@ -10,7 +10,8 @@ public class CardTextBox : ScriptableObject {
     public string nameBox;
     public string description;
 
-    //public Sprite charArt;
+    public Sprite IconArt;
+    public Sprite IconName;
     
 
     public int manaCost;
