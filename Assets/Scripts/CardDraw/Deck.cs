@@ -22,6 +22,7 @@ public class Deck : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        
         for (int i = 0; i < playerDeck.Count; i++)
         {
             playerDeck[i].GetComponent<Draging>().IsPlayer = IsplayerDeck;
@@ -59,7 +60,7 @@ public class Deck : MonoBehaviour
                 else
                 {
                     GameObject obj = Instantiate(playerDeck[random], spawn, Quaternion.Euler(90, 0, 0));
-                    playerHand[cardsInHand] = obj;
+                    playerHand[cardsInHand] = obj;                    
                     playerDeck.RemoveAt(random);
                     cardsInHand++;
                 }
@@ -75,10 +76,12 @@ public class Deck : MonoBehaviour
         {
             Vector3 pos = new Vector3(
                 i,
-                0,
+                9,
                 //Mathf.Sin(((i * Mathf.PI) - curvePos -4) / (playerHand.Count - 1)) * curveHeigth
                 0);
+            
             playerHand[i].transform.position = pos;
+            Debug.Log(playerHand[i]);
 
             Vector3 pos2 = new Vector3(playerHand[i].transform.position.x - (cardsInHand/2.4f),
             playerHand[i].transform.position.y,

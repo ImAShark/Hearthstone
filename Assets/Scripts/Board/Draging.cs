@@ -6,6 +6,7 @@ public class Draging : MonoBehaviour
 {
     [HideInInspector]
     public bool IsPlayer;
+    //public Deck deckScript;
     public GameObject Deck;
 
     private GameObject UsingDeck;
@@ -37,7 +38,7 @@ public class Draging : MonoBehaviour
     {
         screenPoint = cam.WorldToScreenPoint(transform.position);
         offset = transform.position - cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
-        
+        //deckScript.movingCard = this.gameObject;
 
 
     }
@@ -68,9 +69,10 @@ public class Draging : MonoBehaviour
     {
         //Should have gone for the head!!
         if (colDetec.onBoard) {
-            
+            Deck.GetComponent<Deck>().playerHand.Remove(this.gameObject);
+            Deck.GetComponent<Deck>().playerHand.Add(null);
             transform.position = colDetec.playPos;
-
+            //colDetec.gameObject
             // tempCard = Deck.GetComponent<Deck>().playerHand[];
             Deck.SendMessage("OrderCards");
             gameObject.AddComponent<SpawnArrow>();
