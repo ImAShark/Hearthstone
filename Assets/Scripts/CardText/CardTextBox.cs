@@ -7,7 +7,7 @@ using UnityEngine.UI;
 [CreateAssetMenu(fileName ="Nieuwe kaart", menuName ="Kaart")]
 public class CardTextBox : ScriptableObject {
 
-    public string nameBox;
+    //public string nameBox;
     public string description;
 
     public Sprite IconArt;

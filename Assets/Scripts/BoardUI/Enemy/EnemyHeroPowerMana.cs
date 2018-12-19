@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerHeroPowerMana : MonoBehaviour {
-    public Text HeroPowerMana;
+public class EnemyHeroPowerMana : MonoBehaviour {
+    public Text EnemyHeroPower;
     private int Mana;
 
 
@@ -12,7 +12,7 @@ public class PlayerHeroPowerMana : MonoBehaviour {
 	void Start () {
         Mana = 2;
 
-        HeroPowerMana.text = "2";
+        EnemyHeroPower.text = "2";
 	}
 	
 	// Update is called once per frame
@@ -20,8 +20,8 @@ public class PlayerHeroPowerMana : MonoBehaviour {
 		
 	}
 
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
-        
+        EnemyHeroPower.text = EnemyHeroPower.text = " ";
     }
 }
