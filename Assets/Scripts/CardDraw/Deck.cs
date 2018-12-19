@@ -10,6 +10,8 @@ public class Deck : MonoBehaviour
     public float strength = 0;
     private int cardsInHand = 0;
 
+    public bool IsplayerDeck = true;
+
     public Vector3 spawn = new Vector3(0, 0, 0);
 
     private Quaternion rot;
@@ -20,13 +22,18 @@ public class Deck : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        for (int i = 0; i < playerDeck.Count; i++)
+        {
+            playerDeck[i].GetComponent<Draging>().IsPlayer = IsplayerDeck;
+        }
+
         DrawCard(drawAmount);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //OrderCards();
+
     }
 
     private void DrawCard(int amount)

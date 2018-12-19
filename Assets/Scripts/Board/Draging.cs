@@ -4,26 +4,33 @@ using UnityEngine;
 
 public class Draging : MonoBehaviour
 {
+    [HideInInspector]
+    public bool IsPlayer;
+    public GameObject Deck;
+
+    private GameObject UsingDeck;
     private Vector3 screenPoint;
     private Vector3 offset;
-    public Camera cam;
-    private bool isDragging = false;
+
+    private Camera cam;
+    private bool isDragging;
+
     private CollisionDetectionCard colDetec;
     
     
 
     void Start()
     {
+        cam = GameObject.Find("Main Camera").GetComponent<Camera>();
         colDetec = GetComponent<CollisionDetectionCard>();
+        Deck = GameObject.Find("PlayerDeck");
+
+        if (!IsPlayer)
+        {
+            Destroy(this);
+        }
         
     }
-
-
-    void Update()
-    {
-        
-    }
-
 
 
     void OnMouseDown()
@@ -59,16 +66,25 @@ public class Draging : MonoBehaviour
     }
     public void Snap()
     {
-        //SHould have gone for the head!!
+        //Should have gone for the head!!
         if (colDetec.onBoard) {
             
             transform.position = colDetec.playPos;
+
+            // tempCard = Deck.GetComponent<Deck>().playerHand[];
+            Deck.SendMessage("OrderCards");
+            gameObject.AddComponent<SpawnArrow>();
             Destroy(this);
+            
+
         }
         else
         {
             
             transform.position = colDetec.playPos;
+            
+            Deck.SendMessage("OrderCards");
+
         }
 
     }

@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Board
+  - Card
+  - PlayerDeck
+  - EnemyDeck
   layers:
   - Default
   - TransparentFX

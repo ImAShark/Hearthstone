@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114936007516948646}
   - component: {fileID: 114999187328642486}
   - component: {fileID: 54730459738809554}
+  - component: {fileID: 114354098694569928}
   m_Layer: 9
   m_Name: Card
   m_TagString: Card
@@ -71,6 +72,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.52, y: 2.1300006, z: 0.20000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114354098694569928
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1261691829475404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f11eb38884408be4c94e8365e0491bf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabs:
+  - {fileID: 1817019660882158, guid: 9d2366ac226e0cd49960f97775b40ad7, type: 2}
+  - {fileID: 1997493782041232, guid: 4d9507e272e58cf4a833f4fb22dde2d2, type: 2}
 --- !u!114 &114936007516948646
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -82,7 +97,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9254fe0a08b811247b80ff484016a315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 20869399577229278, guid: aa728f88bf74c964a95e7b5a1e0736a3, type: 2}
+  IsPlayer: 1
+  Deck: {fileID: 0}
 --- !u!114 &114999187328642486
 MonoBehaviour:
   m_ObjectHideFlags: 1
