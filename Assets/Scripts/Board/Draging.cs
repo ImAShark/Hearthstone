@@ -67,7 +67,7 @@ public class Draging : MonoBehaviour
             transform.position = colDetec.playPos;
 
 
-            gameObject.AddComponent<SpawnArrow>();
+            gameObject.AddComponent<SpawnArrowParts>();
             Destroy(this);
             
 
