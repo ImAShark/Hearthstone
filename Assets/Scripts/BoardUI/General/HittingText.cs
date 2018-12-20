@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,7 +20,7 @@ public class HittingText : MonoBehaviour {
         {
             DamageToText = DamageFace.ToString();
             Debug.Log(DamageToText);
-            HitTextBox.text = DamageToText;
+            HitTextBox.text = "-" +DamageToText;
         }
     }
 
