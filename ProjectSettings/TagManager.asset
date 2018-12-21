@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags: []
+=======
+  tags:
+  - Card
+>>>>>>> 84f676fb971e91dbfe92e49fcb00e0478b6e9cf0
   layers:
   - Default
   - TransparentFX

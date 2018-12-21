@@ -4,7 +4,11 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
+<<<<<<< HEAD
   productGUID: b66c712af17734840b2b08e6303dc704
+=======
+  productGUID: 87da7b7029018864ab10500d33a1c61f
+>>>>>>> 84f676fb971e91dbfe92e49fcb00e0478b6e9cf0
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +17,11 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
+<<<<<<< HEAD
   productName: Vertical Slice
+=======
+  productName: Hearthstone
+>>>>>>> 84f676fb971e91dbfe92e49fcb00e0478b6e9cf0
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -549,14 +557,22 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
+<<<<<<< HEAD
   metroPackageName: Vertical Slice
+=======
+  metroPackageName: Hearthstone
+>>>>>>> 84f676fb971e91dbfe92e49fcb00e0478b6e9cf0
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
+<<<<<<< HEAD
   metroApplicationDescription: Vertical Slice
+=======
+  metroApplicationDescription: Hearthstone
+>>>>>>> 84f676fb971e91dbfe92e49fcb00e0478b6e9cf0
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
